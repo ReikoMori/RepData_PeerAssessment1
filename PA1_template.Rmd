@@ -4,6 +4,7 @@ output:
   html_document:
     keep_md: true
 ---
+<<<<<<< HEAD
 ## Pre-processing
 
 ### Load libraries
@@ -48,10 +49,21 @@ print(mean_day)
 median_day <- median(Steps_per_day, na.rm=TRUE)
 print(median_day)
 ```
+=======
+
+
+## Loading and preprocessing the data
+
+
+
+## What is mean total number of steps taken per day?
+
+>>>>>>> 80edf39c3bb508fee88e3394542f967dd3fd3270
 
 
 ## What is the average daily activity pattern?
 
+<<<<<<< HEAD
 ### 1. Make a time series plot
 
 ```{r time_plot, echo=TRUE}
@@ -67,10 +79,13 @@ plot(sum_time$interval, sum_time$mean_time, type="l", xlab="Time interval", ylab
 n <- which.max(sum_time$mean_time)
 sum_time[n,]
 ```
+=======
+>>>>>>> 80edf39c3bb508fee88e3394542f967dd3fd3270
 
 
 ## Imputing missing values
 
+<<<<<<< HEAD
 ### 1. Total number of missing values
 
 ```{r missing, echo=TRUE}
@@ -145,3 +160,8 @@ sum_time_f_wd$mean_time <- as.matrix(sum_time_f_wd[,2])
 plot(sum_time_f_we$interval, sum_time_f_we$mean_time, type="l", xlab="Time interval", ylab="Average number of steps", main="Weekend")
 plot(sum_time_f_wd$interval, sum_time_f_wd$mean_time, type="l", xlab="Time interval", ylab="Average number of steps", main="Weekday")
 ```
+=======
+
+
+## Are there differences in activity patterns between weekdays and weekends?
+>>>>>>> 80edf39c3bb508fee88e3394542f967dd3fd3270
